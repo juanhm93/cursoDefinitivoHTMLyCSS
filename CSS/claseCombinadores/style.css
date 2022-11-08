@@ -1,0 +1,17 @@
+/* combinador de hermano adyaente o cercano (adjacent sibling) */
+h2 + p {
+    color: red;
+}
+
+/* combinador de hermano general (general sibling) */
+h2 ~ p {
+    color: blue;
+}
+/* combinador child, se conoce como hijo directo */
+div > p {
+    color: red;
+}
+/* combinador descendiente */
+div p {
+    color: blue;
+}

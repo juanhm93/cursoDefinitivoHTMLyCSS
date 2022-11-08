@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+}
+
+.container {
+    height: 50vh;
+    border: .3rem solid black;
+    display: flex;
+    justify-content: space-evenly;
+    /* baseline funciona para hacer el height del tamano que obligue sus elementos hijos */
+    /* align-items: baseline;   */
+    /* stretch funciona para hacer el height del tamano del contenedor padre en height */
+    /* align-items: stretch;   */
+    flex-wrap: wrap;
+}
+.box {
+    /* width: 10rem; */
+    height: 10rem;
+    flex-basis: 10rem;
+    flex-grow: 1;
+}
+.box1 {
+    background-color: aqua;
+    /* order ordena los elementos por posiciones, loos elementos que no tiene order se colocan adelante a la izquierda */
+    /* order: 1; */
+
+    /* flex-grow se como el espacio restante de width que queda sobrante */
+    /* flex-grow: 1; */
+}
+.box2 {
+    background-color: yellow;
+    /* order: 3; */
+    /* flex-grow: 1; */
+}
+.box3 {
+    background-color: yellowgreen;
+}
+.box4 {
+    background-color: red;
+}
+.box5 {
+    background-color: orange;
+    /* order: 4; */
+}
+.box6 {
+    background-color: purple;
+    /* order: 2; */
+}
